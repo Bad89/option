@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../navigation/side_bar/navigation_rail.dart';
 
 class OnboardingPage1 extends StatelessWidget {
   const OnboardingPage1({Key? key}) : super(key: key);
@@ -8,29 +9,29 @@ class OnboardingPage1 extends StatelessWidget {
     return Scaffold(
       body: OnboardingPagePresenter(pages: [
         OnboardingPageModel(
-          title: 'Fast, Fluid and Secure',
-          description: 'Enjoy the best of the world in the palm of your hands.',
-          imageUrl: 'https://i.ibb.co/cJqsPSB/scooter.png',
-          bgColor: Colors.indigo,
-        ),
-        OnboardingPageModel(
-          title: 'Connect with your friends.',
-          description: 'Connect with your friends anytime anywhere.',
-          imageUrl: 'https://i.ibb.co/LvmZypG/storefront-illustration-2.png',
-          bgColor: const Color(0xff1eb090),
-        ),
-        OnboardingPageModel(
-          title: 'Bookmark your favourites',
+          title: 'Adventure, Information, Knowledge',
           description:
-              'Bookmark your favourite quotes to read at a leisure time.',
-          imageUrl: 'https://i.ibb.co/420D7VP/building.png',
-          bgColor: const Color(0xfffeae4f),
+              'FAQ Agreement all rules in this app when you click next',
+          imageUrl: 'assets/Screen Shot 2023-05-06 at 21.37.53.png',
+          bgColor: Color.fromARGB(255, 230, 230, 230),
         ),
         OnboardingPageModel(
-          title: 'Follow creators',
+          title: 'Hobby, Curios ,Knowledge',
+          description: 'Connect with your PET.',
+          imageUrl: 'assets/output-onlinepngtools.png',
+          bgColor: Color.fromARGB(255, 255, 255, 255),
+        ),
+        OnboardingPageModel(
+          title: 'Health, Pharmalogy, Consultation',
+          description: 'Health Aware',
+          imageUrl: 'assets/Screen Shot 2023-05-06 at 22.15.01.png',
+          bgColor: Color.fromARGB(255, 255, 255, 255),
+        ),
+        OnboardingPageModel(
+          title: 'Navigation Sea, Mountain, Jungle and Nature',
           description: 'Follow your favourite creators to stay in the loop.',
-          imageUrl: 'https://i.ibb.co/cJqsPSB/scooter.png',
-          bgColor: Colors.purple,
+          imageUrl: 'assets/dagcilik-nedir.jpg',
+          bgColor: Color.fromARGB(255, 255, 255, 255),
         ),
       ]),
     );
@@ -136,7 +137,7 @@ class _OnboardingPageState extends State<OnboardingPagePresenter> {
                           height: 8,
                           margin: const EdgeInsets.all(2.0),
                           decoration: BoxDecoration(
-                              color: Colors.white,
+                              color: const Color.fromARGB(255, 255, 0, 0),
                               borderRadius: BorderRadius.circular(10.0)),
                         ))
                     .toList(),
@@ -151,21 +152,33 @@ class _OnboardingPageState extends State<OnboardingPagePresenter> {
                     TextButton(
                         style: TextButton.styleFrom(
                             visualDensity: VisualDensity.comfortable,
-                            foregroundColor: Colors.white,
+                            // skip
+                            foregroundColor: Color.fromARGB(255, 255, 68, 0),
                             textStyle: const TextStyle(
                                 fontSize: 16, fontWeight: FontWeight.bold)),
+                        // routehere **
                         onPressed: () {
+                          Route route = MaterialPageRoute(
+                              builder: (context) => NavigationRailPage());
+                          Navigator.push(context, route);
+
                           widget.onSkip?.call();
                         },
                         child: const Text("Skip")),
                     TextButton(
                       style: TextButton.styleFrom(
                           visualDensity: VisualDensity.comfortable,
-                          foregroundColor: Colors.white,
+                          foregroundColor: Color.fromARGB(255, 255, 68, 0),
                           textStyle: const TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold)),
+                      // routehere **
                       onPressed: () {
                         if (_currentPage == widget.pages.length - 1) {
+                          //routehere **
+                          Route route = MaterialPageRoute(
+                              builder: (context) => NavigationRailPage());
+                          Navigator.push(context, route);
+
                           widget.onFinish?.call();
                         } else {
                           _pageController.animateToPage(_currentPage + 1,
@@ -210,5 +223,5 @@ class OnboardingPageModel {
       required this.description,
       required this.imageUrl,
       this.bgColor = Colors.blue,
-      this.textColor = Colors.white});
+      this.textColor = Colors.red});
 }
