@@ -10,13 +10,13 @@ class NewsFeedPage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Container(
-          constraints: const BoxConstraints(maxWidth: 400),
+          constraints: const BoxConstraints(maxWidth: 800),
           child: ListView.builder(
             itemCount: _articles.length,
             itemBuilder: (BuildContext context, int index) {
               final item = _articles[index];
               return Container(
-                height: 136,
+                height: 250,
                 margin:
                     const EdgeInsets.symmetric(horizontal: 16, vertical: 8.0),
                 decoration: BoxDecoration(
@@ -33,10 +33,10 @@ class NewsFeedPage extends StatelessWidget {
                         Text(
                           item.title,
                           style: const TextStyle(fontWeight: FontWeight.bold),
-                          maxLines: 2,
+                          maxLines: 10,
                           overflow: TextOverflow.ellipsis,
                         ),
-                        const SizedBox(height: 8),
+                        const SizedBox(height: 25),
                         Text("${item.author} · ${item.postedOn}",
                             style: Theme.of(context).textTheme.caption),
                         const SizedBox(height: 8),
@@ -94,46 +94,51 @@ class Article {
 
 final List<Article> _articles = [
   Article(
-    title: "Instagram quietly limits ‘daily time limit’ option",
-    author: "MacRumors",
-    imageUrl: "https://picsum.photos/id/1000/960/540",
-    postedOn: "Yesterday",
-  ),
-  Article(
-      title: "Google Search dark theme goes fully black for some on the web",
-      imageUrl: "https://picsum.photos/id/1010/960/540",
-      author: "9to5Google",
-      postedOn: "4 hours ago"),
-  Article(
-    title: "Check your iPhone now: warning signs someone is spying on you",
-    author: "New York Times",
-    imageUrl: "https://picsum.photos/id/1001/960/540",
-    postedOn: "2 days ago",
+    title:
+        "Uncooperative’ squirrel stuck in manhole cover freed by firefighters in Germany",
+    author: "Harry Stedman",
+    imageUrl:
+        "https://static.independent.co.uk/2023/04/11/12/11113317-9c53895e-f017-4109-af65-c6d7adfd7b12.jpeg?quality=75&width=990&crop=2048%3A1365%2Csmart&auto=webp",
+    postedOn: "Tuesday 11 April 2023 12:31",
   ),
   Article(
     title:
-        "Amazon’s incredibly popular Lost Ark MMO is ‘at capacity’ in central Europe",
-    author: "MacRumors",
-    imageUrl: "https://picsum.photos/id/1002/960/540",
-    postedOn: "22 hours ago",
+        "Experts Raise Concern Over Continued Threats to Leatherback Sea Turtles Despite Conservation Progress in 2023. Estimates by the WWF suggest only 2,300 adult females of the Pacific leatherback remain, making it the most endangered marine turtle subpopulation.",
+    author: "PAW - HIKE ",
+    imageUrl: "assets/Dermochelys-Glynn-Co-MS.jpeg",
+    postedOn: "07 May 2023",
   ),
   Article(
     title:
-        "Panasonic's 25-megapixel GH6 is the highest resolution Micro Four Thirds camera yet",
-    author: "Polygon",
-    imageUrl: "https://picsum.photos/id/1020/960/540",
-    postedOn: "2 hours ago",
+        "Towering over the beautiful landscape of Lombok island, Mount Rinjani is Indonesia’s second highest volcano. That means it offers a demanding three to four days’ journey on a rather challenging trail, even for more seasoned hikers. Your determination to summit this volcano will be rewarded with the exquisite Segara Anak crater lake and a sweeping view of the island. However, even short hikes around the mountain’s base will suffice to take you to Rinjani’s picturesque hills and waterfalls.",
+    author: "PAW - HIKE",
+    imageUrl: "assets/gunungrinjanilombok21.jpg",
+    postedOn: "07 May 2023",
   ),
   Article(
-    title: "Samsung Galaxy S22 Ultra charges strangely slowly",
-    author: "TechRadar",
-    imageUrl: "https://picsum.photos/id/1021/960/540",
-    postedOn: "10 days ago",
+    title:
+        "How to Choose the Right Hiking Gear, In the pursuit of our goals, it’s our gear that supports us along the way, which is why it’s so important to choose the right equipment",
+    author: "PAW - HIKE",
+    imageUrl: "assets/hikinggear.jpg",
+    postedOn: "07 May 2023",
   ),
-  Article(
-    title: "Snapchat unveils real-time location sharing",
-    author: "Fox Business",
-    imageUrl: "https://picsum.photos/id/1060/960/540",
-    postedOn: "10 hours ago",
-  ),
+  // Article(
+  //   title:
+  //       "Panasonic's 25-megapixel GH6 is the highest resolution Micro Four Thirds camera yet",
+  //   author: "Polygon",
+  //   imageUrl: "https://picsum.photos/id/1020/960/540",
+  //   postedOn: "2 hours ago",
+  // ),
+  // Article(
+  //   title: "Samsung Galaxy S22 Ultra charges strangely slowly",
+  //   author: "TechRadar",
+  //   imageUrl: "https://picsum.photos/id/1021/960/540",
+  //   postedOn: "10 days ago",
+  // ),
+  // Article(
+  //   title: "Snapchat unveils real-time location sharing",
+  //   author: "Fox Business",
+  //   imageUrl: "https://picsum.photos/id/1060/960/540",
+  //   postedOn: "10 hours ago",
+  // ),
 ];

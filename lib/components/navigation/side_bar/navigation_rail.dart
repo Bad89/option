@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../../pages/NewsFeedPage.dart';
-// import '../../pages/listpage.dart';
+import '../../pages/hero_listview.dart';
+import '../../pages/Hike_collapsing_app_bar_with_tabs.dart';
+import '../../pages/Paw_collapsing_app_bar_with_tabs.dart';
 
 class NavigationRailPage extends StatefulWidget {
   const NavigationRailPage({Key? key}) : super(key: key);
@@ -14,12 +16,16 @@ class _MyHomePageState extends State<NavigationRailPage> {
 
   final List<Widget> _pages = [
     NewsFeedPage(),
-    // HeroListPage(),
-    // SettingsPage(),
+    PawCollapsingAppbarWithTabsPage(),
+    HikeCollapsingAppbarWithTabsPage(),
   ];
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+    final bool isSmallScreen = width < 600;
+    final bool isLargeScreen = width > 800;
+
     return Scaffold(
       // appBar: AppBar(
       //   title: const Text('My App'),
@@ -168,3 +174,5 @@ class _MyHomePageState extends State<NavigationRailPage> {
 //     );
 //   }
 // }
+
+

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CollapsingAppbarWithTabsPage extends StatelessWidget {
-  const CollapsingAppbarWithTabsPage({Key? key}) : super(key: key);
+class PawCollapsingAppbarWithTabsPage extends StatelessWidget {
+  const PawCollapsingAppbarWithTabsPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,13 +19,13 @@ class CollapsingAppbarWithTabsPage extends StatelessWidget {
                 flexibleSpace: FlexibleSpaceBar(
                     centerTitle: true,
                     collapseMode: CollapseMode.parallax,
-                    title: const Text("Collapsing Appbar",
+                    title: const Text("PAW AREA",
                         style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16.0,
+                          color: Color.fromARGB(255, 255, 255, 0),
+                          fontSize: 45.0,
                         )),
                     background: Image.network(
-                      "https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                      "https://media.istockphoto.com/id/1017243656/vector/group-of-wild-animals.jpg?s=612x612&w=0&k=20&c=Od197jWqpH-2a74lzm7vLhAKNWxu4sO7zeas1nOY3DU=",
                       fit: BoxFit.cover,
                     )),
               ),
@@ -33,7 +33,7 @@ class CollapsingAppbarWithTabsPage extends StatelessWidget {
                 delegate: _SliverAppBarDelegate(
                   const TabBar(
                     indicatorSize: TabBarIndicatorSize.label,
-                    labelColor: Colors.purple,
+                    labelColor: Color.fromARGB(255, 255, 157, 0),
                     unselectedLabelColor: Colors.grey,
                     tabs: _tabs,
                   ),
@@ -55,9 +55,9 @@ class CollapsingAppbarWithTabsPage extends StatelessWidget {
 }
 
 const _tabs = [
-  Tab(icon: Icon(Icons.home_rounded), text: "Home"),
-  Tab(icon: Icon(Icons.shopping_bag_rounded), text: "Cart"),
-  Tab(icon: Icon(Icons.person), text: "Profile"),
+  Tab(icon: Icon(Icons.newspaper), text: "Article"),
+  Tab(icon: Icon(Icons.child_care), text: "Adoption-PET"),
+  Tab(icon: Icon(Icons.shopping_bag_rounded), text: "Pet Shop"),
 ];
 
 class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {

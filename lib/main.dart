@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-// check3
-import './components/./flutter_basics/./animation/hero_listview.dart';
+// // check3
+// import 'components/pages/hero_listview.dart';
 
-// check2
-import './components/forms/sign_in/sign_in_page2.dart';
+// // check2
+// import './components/forms/sign_in/sign_in_page2.dart';
 
 // check6
 
@@ -13,14 +13,14 @@ import './components/pages/onboard.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
-// check4
-import 'components/flutter_basics/appbars/collapsing_app_bar_with_tabs.dart';
+// // // check4
+// // import 'components/flutter_basics/appbars/collapsing_app_bar_with_tabs.dart';
 
-// check5
-import 'components/pages/NewsFeedPage.dart';
+// // check5
+// import 'components/pages/NewsFeedPage.dart';
 
-// check1
-import 'components/navigation/side_bar/navigation_rail.dart';
+// // check1
+// import 'components/navigation/side_bar/navigation_rail.dart';
 
 void main() {
   runApp(const MaterialApp(
