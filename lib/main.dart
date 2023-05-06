@@ -8,7 +8,7 @@ import './components/forms/sign_in/sign_in_page2.dart';
 
 // check6
 
-import 'components/must_haves/onboarding_page/onboarding_page_1.dart';
+import './components/pages/onboard.dart';
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +17,7 @@ import 'package:flutter/material.dart';
 import 'components/flutter_basics/appbars/collapsing_app_bar_with_tabs.dart';
 
 // check5
-import './components/must_haves/content_feed/news_feed_2.dart';
+import 'components/pages/NewsFeedPage.dart';
 
 // check1
 import 'components/navigation/side_bar/navigation_rail.dart';
@@ -26,7 +26,7 @@ void main() {
   runApp(const MaterialApp(
     debugShowCheckedModeBanner: false,
     title: 'PAW-HIKE',
-    home: OnboardingPage1(),
+    home: Onboard(),
   ));
 }
 

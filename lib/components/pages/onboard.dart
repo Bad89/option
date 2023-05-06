@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../navigation/side_bar/navigation_rail.dart';
+import '../navigation/side_bar/navigation_rail.dart';
 
-class OnboardingPage1 extends StatelessWidget {
-  const OnboardingPage1({Key? key}) : super(key: key);
+class Onboard extends StatelessWidget {
+  const Onboard({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

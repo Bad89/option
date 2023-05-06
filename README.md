@@ -4,6 +4,9 @@ A new Flutter project.
 
 - https://github.com/fluttertemplates-dev/components
 - https://belajarflutter.com/memahami-navigasi-routing-di-flutter/
+- https://www.youtube.com/watch?v=m_u6XuYo0xk // routenavbar
+
+
 ## Getting Started
 - flutter run 
 - open -a simulator /ios/android
