@@ -105,7 +105,8 @@ final List<Article> _articles = [
     title:
         "Experts Raise Concern Over Continued Threats to Leatherback Sea Turtles Despite Conservation Progress in 2023. Estimates by the WWF suggest only 2,300 adult females of the Pacific leatherback remain, making it the most endangered marine turtle subpopulation.",
     author: "PAW - HIKE ",
-    imageUrl: "assets/Dermochelys-Glynn-Co-MS.jpeg",
+    imageUrl:
+        "https://static.wikia.nocookie.net/creatures-of-the-world/images/d/de/Leatherback.jpg/revision/latest/scale-to-width-down/260?cb=20160607210044",
     postedOn: "07 May 2023",
   ),
   Article(

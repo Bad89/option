@@ -3,6 +3,7 @@ import '../../pages/NewsFeedPage.dart';
 import '../../pages/hero_listview.dart';
 import '../../pages/Hike_collapsing_app_bar_with_tabs.dart';
 import '../../pages/Paw_collapsing_app_bar_with_tabs.dart';
+// import '../../pages/tawkchat.dart';
 
 class NavigationRailPage extends StatefulWidget {
   const NavigationRailPage({Key? key}) : super(key: key);
@@ -18,6 +19,7 @@ class _MyHomePageState extends State<NavigationRailPage> {
     NewsFeedPage(),
     PawCollapsingAppbarWithTabsPage(),
     HikeCollapsingAppbarWithTabsPage(),
+    // TawkChat(),
   ];
 
   @override
@@ -49,6 +51,11 @@ class _MyHomePageState extends State<NavigationRailPage> {
             activeIcon: Icon(Icons.landscape),
             label: 'Hike',
           ),
+          // BottomNavigationBarItem(
+          //   icon: Icon(Icons.help_center),
+          //   activeIcon: Icon(Icons.help_center),
+          //   label: 'Chat support',
+          // ),
         ],
         onTap: (index) {
           setState(() {
@@ -59,6 +66,11 @@ class _MyHomePageState extends State<NavigationRailPage> {
     );
   }
 }
+
+
+
+
+
 
 // class HomePage extends StatelessWidget {
 //   @override

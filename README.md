@@ -6,6 +6,8 @@ A new Flutter project.
 - https://belajarflutter.com/memahami-navigasi-routing-di-flutter/
 - https://www.youtube.com/watch?v=m_u6XuYo0xk // routenavbar
 
+- https://www.youtube.com/watch?v=7L2XEQx6UZw //feature - chat live
+
 
 ## Getting Started
 - flutter run 
@@ -27,11 +29,11 @@ git init
 git add .
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/Bad89/FLUTTER-PAWHIKE001.git
+git remote add origin https://.git
 git push -u origin main
 
 - push an existing repository from the command line
-git remote add origin https://github.com/Bad89/FLUTTER-PAWHIKE001.git
+git remote add origin https://.git
 git branch -M main
 git push -u origin main
 
@@ -50,4 +52,7 @@ CupertinoApp(
   debugShowCheckedModeBanner: false
 )
 
-## UPDATE0913
+## UPDATETAWKFEATURE
+
+** before firebase init **
+flutter build web --release

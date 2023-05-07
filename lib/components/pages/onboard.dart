@@ -12,25 +12,28 @@ class Onboard extends StatelessWidget {
           title: 'Adventure, Information, Knowledge',
           description:
               'FAQ Agreement all rules in this app when you click next',
-          imageUrl: 'assets/Screen Shot 2023-05-06 at 21.37.53.png',
-          bgColor: Color.fromARGB(255, 230, 230, 230),
+          imageUrl:
+              'https://cdn.shopify.com/s/files/1/0255/4727/6387/products/midnight-purple-bear-paw.png?v=1649772923',
+          bgColor: Color.fromARGB(255, 255, 255, 255),
         ),
         OnboardingPageModel(
           title: 'Hobby, Curios ,Knowledge',
           description: 'Connect with your PET.',
-          imageUrl: 'assets/output-onlinepngtools.png',
+          imageUrl:
+              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbOhl6KpAbrW_sFyW-TJjE04XWZD-4NuX3qQ&usqp=CAU',
           bgColor: Color.fromARGB(255, 255, 255, 255),
         ),
         OnboardingPageModel(
           title: 'Health, Pharmalogy, Consultation',
           description: 'Health Aware',
-          imageUrl: 'assets/Screen Shot 2023-05-06 at 22.15.01.png',
+          imageUrl:
+              'https://animalmedicalservice.com/wp-content/uploads/2021/12/Animal-Medical-Service-logo-1-800px.png',
           bgColor: Color.fromARGB(255, 255, 255, 255),
         ),
         OnboardingPageModel(
           title: 'Navigation Sea, Mountain, Jungle and Nature',
-          description: 'Follow your favourite creators to stay in the loop.',
-          imageUrl: 'assets/dagcilik-nedir.jpg',
+          description: 'Enjoi on the EDGE.',
+          imageUrl: '',
           bgColor: Color.fromARGB(255, 255, 255, 255),
         ),
       ]),
