@@ -23,11 +23,21 @@ import 'package:flutter/material.dart';
 // import 'components/navigation/side_bar/navigation_rail.dart';
 
 void main() {
-  runApp(const MaterialApp(
-    debugShowCheckedModeBanner: false,
-    title: 'PAW-HIKE',
-    home: Onboard(),
-  ));
+  runApp(const MainApp());
+}
+
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'PAW-HIKE',
+      home: Onboard(),
+    );
+  }
 }
 
 // class MyApp extends StatelessWidget {

@@ -19,8 +19,7 @@ class HikeCollapsingAppbarWithTabsPage extends StatelessWidget {
                 flexibleSpace: FlexibleSpaceBar(
                     centerTitle: true,
                     collapseMode: CollapseMode.parallax,
-                    title: const Text(
-                        "Outdoor Activity Area (Mountain, Jungle, Sea)",
+                    title: const Text("Mountain, Jungle, Sea/Water",
                         style: TextStyle(
                           color: Color.fromARGB(255, 255, 255, 255),
                           fontSize: 16.0,
