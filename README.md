@@ -12,6 +12,8 @@ A new Flutter project.
 
 - https://www.tawk.to
 
+- https://pub.dev/packages/curved_navigation_bar
+
 
 ## Getting Started
 - flutter run 
@@ -56,7 +58,9 @@ CupertinoApp(
   debugShowCheckedModeBanner: false
 )
 
-## UPDATETAWKFEATURE
+## UPDATE
+- TAWKFEATURE chat live
+- navbar animation
 
 ** before firebase init **
 flutter build web --release

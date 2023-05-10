@@ -140,7 +140,7 @@ class _OnboardingPageState extends State<OnboardingPagePresenter> {
                           height: 8,
                           margin: const EdgeInsets.all(2.0),
                           decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 255, 0, 0),
+                              color: Colors.blueAccent,
                               borderRadius: BorderRadius.circular(10.0)),
                         ))
                     .toList(),
@@ -156,7 +156,7 @@ class _OnboardingPageState extends State<OnboardingPagePresenter> {
                         style: TextButton.styleFrom(
                             visualDensity: VisualDensity.comfortable,
                             // skip
-                            foregroundColor: Color.fromARGB(255, 255, 68, 0),
+                            foregroundColor: Colors.blueAccent,
                             textStyle: const TextStyle(
                                 fontSize: 16, fontWeight: FontWeight.bold)),
                         // routehere **
@@ -171,7 +171,7 @@ class _OnboardingPageState extends State<OnboardingPagePresenter> {
                     TextButton(
                       style: TextButton.styleFrom(
                           visualDensity: VisualDensity.comfortable,
-                          foregroundColor: Color.fromARGB(255, 255, 68, 0),
+                          foregroundColor: Colors.blueAccent,
                           textStyle: const TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold)),
                       // routehere **
@@ -226,5 +226,5 @@ class OnboardingPageModel {
       required this.description,
       required this.imageUrl,
       this.bgColor = Colors.blue,
-      this.textColor = Colors.red});
+      this.textColor = Colors.blueAccent});
 }

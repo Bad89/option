@@ -3,6 +3,9 @@ import '../../pages/NewsFeedPage.dart';
 import '../../pages/hero_listview.dart';
 import '../../pages/Hike_collapsing_app_bar_with_tabs.dart';
 import '../../pages/Paw_collapsing_app_bar_with_tabs.dart';
+
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+
 // import '../../pages/tawkchat.dart';
 
 class NavigationRailPage extends StatefulWidget {
@@ -15,11 +18,12 @@ class NavigationRailPage extends StatefulWidget {
 class _MyHomePageState extends State<NavigationRailPage> {
   int _currentIndex = 0;
 
+  GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
+
   final List<Widget> _pages = [
     NewsFeedPage(),
     PawCollapsingAppbarWithTabsPage(),
     HikeCollapsingAppbarWithTabsPage(),
-    // TawkChat(),
   ];
 
   @override
@@ -29,34 +33,24 @@ class _MyHomePageState extends State<NavigationRailPage> {
     final bool isLargeScreen = width > 800;
 
     return Scaffold(
-      // appBar: AppBar(
-      //   title: const Text('My App'),
-      // ),
       body: _pages[_currentIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _currentIndex,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home_outlined),
-            activeIcon: Icon(Icons.home_rounded),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.pets_rounded),
-            activeIcon: Icon(Icons.pets_rounded),
-            label: 'Paw',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.landscape),
-            activeIcon: Icon(Icons.landscape),
-            label: 'Hike',
-          ),
+      bottomNavigationBar: CurvedNavigationBar(
+        key: _bottomNavigationKey,
+        // currentIndex: _currentIndex,
+        items: <Widget>[
+          Icon(Icons.home_outlined),
+          Icon(Icons.pets_rounded),
+          Icon(Icons.landscape),
           // BottomNavigationBarItem(
           //   icon: Icon(Icons.help_center),
           //   activeIcon: Icon(Icons.help_center),
           //   label: 'Chat support',
           // ),
         ],
+
+        color: Color.fromARGB(255, 255, 255, 255),
+        animationCurve: Curves.easeInOut,
+        animationDuration: Duration(milliseconds: 600),
         onTap: (index) {
           setState(() {
             _currentIndex = index;
@@ -66,6 +60,59 @@ class _MyHomePageState extends State<NavigationRailPage> {
     );
   }
 }
+
+
+
+// class _MyHomePageState extends State<NavigationRailPage> {
+//   int _currentIndex = 0;
+
+//   GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
+
+//   final List<Widget> _pages = [
+//     NewsFeedPage(),
+//     PawCollapsingAppbarWithTabsPage(),
+//     HikeCollapsingAppbarWithTabsPage(),
+//     // TawkChat(),
+//   ];
+
+//   @override
+//   Widget build(BuildContext context) {
+//     final width = MediaQuery.of(context).size.width;
+//     final bool isSmallScreen = width < 600;
+//     final bool isLargeScreen = width > 800;
+
+//     return Scaffold(
+//       // appBar: AppBar(
+//       //   title: const Text('My App'),
+//       // ),
+//       body: _pages[_currentIndex],
+//       bottomNavigationBar: CurvedNavigationBar(
+//         key: _bottomNavigationKey,
+//         currentIndex: _currentIndex,
+//         items: <Widget>[
+//           Icon(Icons.home_outlined),
+
+//           Icon(Icons.pets_rounded),
+
+//           Icon(Icons.landscape),
+//           // BottomNavigationBarItem(
+//           //   icon: Icon(Icons.help_center),
+//           //   activeIcon: Icon(Icons.help_center),
+//           //   label: 'Chat support',
+//           // ),
+//         ],
+//         color: Colors.white,
+//         animationCurve: Curves.easeInOut,
+//         animationDuration: Duration(milliseconds: 600),
+//         onTap: (index) {
+//           setState(() {
+//             _currentIndex = index;
+//           });
+//         },
+//       ),
+//     );
+//   }
+// }
 
 
 
