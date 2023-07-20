@@ -64,3 +64,7 @@ CupertinoApp(
 
 ** before firebase init **
 flutter build web --release
+
+flutter channel stable
+
+## token = 1//0g7wKSTtwW1ygCgYIARAAGBASNwF-L9IrRubRbEUUeU1NftRSzNgsbTSCohN-BCMWQ2UPvrV1SLDpQIWC62EMaJeiUm1HeYo4310
