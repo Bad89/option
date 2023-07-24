@@ -70,3 +70,8 @@ flutter channel stable
 ## token = 1//0g7wKSTtwW1ygCgYIARAAGBASNwF-L9IrRubRbEUUeU1NftRSzNgsbTSCohN-BCMWQ2UPvrV1SLDpQIWC62EMaJeiUm1HeYo4310
 
 repo = https://github.com/Bad89/FLUTTER-PAWHIKE-ORIGIN02-TAWK-FEATURE-update002.git
+
+lib
+  -component (content // page)
+  main
+    - activation // sync app
