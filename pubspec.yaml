@@ -39,6 +39,7 @@ dependencies:
   onboarding: ^3.1.0
   flutter_tawk: ^0.1.0
   curved_navigation_bar: ^1.0.3
+  carousel_slider: ^4.2.1
 
 dev_dependencies:
   flutter_test:
@@ -65,6 +66,20 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/sea-turtle.png
+    - assets/adopt-pet-concept_23-2148517279.jpg
+    - assets/benefits-living-with-pet-infographic_52683-37609.jpg
+
+    - assets/outdoor-activity-logo_7347-74.jpg.webp
+    - assets/AdobeStock_275126034.jpeg
+    - assets/adopt-pet-concept_23-2148517279.jpg
+    - assets/b1d9c5c408953ef59d8adeff838ca004--utah-adventures-outdoor-adventures.jpg
+    - assets/el-capitan-yosemite-national-park-rock-climbing-2.jpg
+    - assets/epicclimbing.jpg
+    - assets/images.jpeg
+    - assets/istockphoto-1392501146-612x612.jpg
+    - assets/off_road-2.png.webp
+    - assets/Lakeside-Camp-1024x577.jpeg
+    - assets/520cf6_04133fb1a0d74f1fab5d611f3accd0a2~mv2.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

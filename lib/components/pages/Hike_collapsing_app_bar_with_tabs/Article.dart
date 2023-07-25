@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pawhike002/components/pages/Paw_collapsing_app_bar_with_tabs/Article.dart';
 
 // class Vet extends StatelessWidget {
 //   const Vet({Key? key}) : super(key: key);
@@ -20,8 +21,8 @@ import 'package:flutter/material.dart';
 //   }
 // }
 
-class Vet extends StatelessWidget {
-  const Vet({Key? key}) : super(key: key);
+class Article extends StatelessWidget {
+  const Article({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,10 +30,10 @@ class Vet extends StatelessWidget {
       crossAxisCount: 3,
       crossAxisSpacing: 4.0,
       mainAxisSpacing: 8.0,
-      children: List.generate(vet.length, (index) {
+      children: List.generate(article.length, (index) {
         return Center(
           child: SelectCard(
-            dr: vet[index], // Corrected variable name and method call
+            news: article[index], // Corrected variable name and method call
           ),
         );
       }),
@@ -40,30 +41,30 @@ class Vet extends StatelessWidget {
   }
 }
 
-class Dr {
-  Dr({required this.title, required this.image});
+class News {
+  News({required this.title, required this.image});
   final String title;
   final Image image;
 }
 
-List<Dr> vet = [
-  Dr(
-    title: 'dr.hewan Arnie (Animal surgeon & Pet Expertise) Comming Soon',
+List<News> article = [
+  News(
+    title: 'CommingSoon',
     image: Image.asset(
       'assets/sea-turtle.png',
       width: double.infinity,
       height: 300,
     ),
   ),
-  Dr(
-    title: 'dr.hewan Ayu (Nutrisi & Pet/Animal Food) Comming Soon',
+  News(
+    title: 'CommingSoon',
     image: Image.asset(
       'assets/sea-turtle.png',
       width: double.infinity,
       height: 300,
     ),
   ),
-  Dr(
+  News(
     title: 'Coming Soon',
     image: Image.asset(
       'assets/sea-turtle.png',
@@ -71,7 +72,7 @@ List<Dr> vet = [
       height: 300,
     ),
   ),
-  Dr(
+  News(
     title: 'Comming Soon',
     image: Image.asset(
       'assets/sea-turtle.png',
@@ -82,8 +83,8 @@ List<Dr> vet = [
 ];
 
 class SelectCard extends StatelessWidget {
-  SelectCard({required this.dr});
-  final Dr dr;
+  SelectCard({required this.news});
+  final News news;
 
   @override
   Widget build(BuildContext context) {
@@ -95,9 +96,9 @@ class SelectCard extends StatelessWidget {
           child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                Expanded(child: dr.image),
+                Expanded(child: news.image),
                 Text(
-                  dr.title,
+                  news.title,
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
               ]),

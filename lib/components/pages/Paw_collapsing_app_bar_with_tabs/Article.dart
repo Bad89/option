@@ -28,33 +28,33 @@ class News {
 
 List<News> article = [
   News(
-    title: 'DeadPool',
+    title: 'CommingSoon',
     image: Image.asset(
-      'images/deadpool.jpg',
+      'assets/sea-turtle.png',
       width: double.infinity,
       height: 300,
     ),
   ),
   News(
-    title: 'Gravity',
+    title: 'CommingSoon',
     image: Image.asset(
-      'images/gravity.jpg',
+      'assets/sea-turtle.png',
       width: double.infinity,
       height: 300,
     ),
   ),
   News(
-    title: 'Hobbit',
+    title: 'CommingSoon',
     image: Image.asset(
-      'images/hobbit.jpg',
+      'assets/sea-turtle.png',
       width: double.infinity,
       height: 300,
     ),
   ),
   News(
-    title: 'Pirates',
+    title: 'CommingSoon',
     image: Image.asset(
-      'images/pairates.jpg',
+      'assets/sea-turtle.png',
       width: double.infinity,
       height: 300,
     ),

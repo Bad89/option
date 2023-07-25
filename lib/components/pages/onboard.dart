@@ -11,14 +11,15 @@ class Onboard extends StatelessWidget {
         OnboardingPageModel(
           title: 'Adventure, Information, Knowledge',
           description:
-              'FAQ Agreement all rules in this app when you click Next //GoPay for transaction // use E-mail for Transaction // THIS WEB NOT SCAM!!!!',
+              'FAQ Agreement all rules in this app when you click Next //GoPay for transaction // use E-mail for Transaction',
           imageUrl:
               'https://cdn.shopify.com/s/files/1/0255/4727/6387/products/midnight-purple-bear-paw.png?v=1649772923',
           bgColor: Color.fromARGB(255, 255, 255, 255),
         ),
         OnboardingPageModel(
           title: 'Hobby, Curios ,Knowledge',
-          description: 'Connect with your PET, Adoption. Article.',
+          description:
+              'Connect with your PET, Adoption. Article.(system will be update)',
           imageUrl:
               'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbOhl6KpAbrW_sFyW-TJjE04XWZD-4NuX3qQ&usqp=CAU',
           bgColor: Color.fromARGB(255, 255, 255, 255),
@@ -26,14 +27,15 @@ class Onboard extends StatelessWidget {
         OnboardingPageModel(
           title: 'Health, Pharmalogy, Consultation',
           description:
-              'ANIMAL Consultation with Veterinary Fill form and choose dr.',
+              'ANIMAL Consultation with Veterinary Fill form and choose dr. (Feature and Service will be update)',
           imageUrl:
               'https://animalmedicalservice.com/wp-content/uploads/2021/12/Animal-Medical-Service-logo-1-800px.png',
           bgColor: Color.fromARGB(255, 255, 255, 255),
         ),
         OnboardingPageModel(
           title: 'Outdoor Activity',
-          description: 'Information, Consultation, Odysey Plan',
+          description:
+              'Information, Consultation, Odysey Plan (enjoi For Article for while . . . waiting system Update Thank you)',
           imageUrl:
               'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmHf5K39RN97Ciw9qkduLE7x4T8XndhnZQJw&usqp=CAU',
           bgColor: Color.fromARGB(255, 255, 255, 255),
